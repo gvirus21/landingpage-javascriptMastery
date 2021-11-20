@@ -1,10 +1,22 @@
-import './App.css';
-import {Article, Brand, CTA, Feature, Navbar } from "./components"
+import './containers/App.css';
+import { Blog, Features, Footer, Header, Possibility, WhatGPT3} from "./containers"
+import { Brand, CTA, Navbar } from "./components";
 
 function App() {
   return (
     <div className="App">
-      Ello
+      <div className="gradient__bg">
+        <Navbar />
+        <Header />
+      </div>
+
+      <Brand />
+      <WhatGPT3 />
+      <Features />
+      <Possibility />
+      <CTA />
+      <Blog />
+      <Footer />
     </div>
   );
 }
